@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "Q1111"
+  name: "Q1111"
+  orgIdentifier: "default"
+  projectIdentifier: "DemoImran"
+  pipeline:
+    identifier: "pipe27"
+    stages:
+    - stage:
+        identifier: "Q1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "a1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.userGroup_nXhCfkaqcI"
