@@ -1,0 +1,22 @@
+inputSet:
+  identifier: "pl_auto_inputset_8BjYc"
+  name: "pl_auto_inputset_8BjYc"
+  tags: {}
+  orgIdentifier: "default"
+  projectIdentifier: "Github_Connector_pipeline"
+  pipeline:
+    identifier: "pl_auto_gitx_x2Pqa"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.testX"
