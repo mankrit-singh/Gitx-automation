@@ -1,0 +1,22 @@
+template:
+  name: pl_auto_template_JPQvT
+  identifier: pl_auto_template_JPQvT
+  versionLabel: v3
+  type: Stage
+  tags: { }
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: step1
+              identifier: step1
+              template:
+                templateRef: account.pl_auto_template_BaF7c
+                versionLabel: v3
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
