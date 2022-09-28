@@ -1,0 +1,27 @@
+pipeline:
+  name: pl_auto_gitx_03G1W
+  identifier: pl_auto_gitx_03G1W
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: Desc Added
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: t1
+                  identifier: t1
+                  template:
+                    templateRef: account.pl_auto_template_PQGKE
+                    versionLabel: v1
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+        tags: {}
