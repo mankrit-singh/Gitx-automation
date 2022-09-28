@@ -1,0 +1,28 @@
+template:
+  name: pl_auto_template_EXd2Z
+  identifier: pl_auto_template_EXd2Z
+  versionLabel: v3
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: A1
+          identifier: A1
+          description: ""
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    name: A2
+                    identifier: A2
+                    template:
+                      templateRef: account.pl_auto_template_skK4d
+                      versionLabel: v3
+                      templateInputs:
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
+          tags: {}
