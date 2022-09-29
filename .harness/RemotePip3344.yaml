@@ -1,0 +1,24 @@
+pipeline:
+  name: RemotePip3344
+  identifier: RemotePip3344
+  projectIdentifier: AmitTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: A4
+        identifier: A4
+        template:
+          templateRef: account.RemoteStageTemplate
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: A2
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
