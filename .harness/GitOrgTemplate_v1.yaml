@@ -1,0 +1,15 @@
+template:
+  name: GitOrgTemplate
+  identifier: GitOrgTemplate
+  versionLabel: v1
+  type: Step
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    type: Run
+    spec:
+      connectorRef: <+input>
+      image: <+input>
+      shell: Sh
+      command: echo 'hi'
+    description: hi
