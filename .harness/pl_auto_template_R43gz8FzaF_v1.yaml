@@ -1,0 +1,25 @@
+template:
+  name: pl_auto_template_R43gz8FzaF
+  identifier: pl_auto_template_R43gz8FzaF
+  versionLabel: v1
+  type: Pipeline
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: pl_auto_variable_uQ0lTPuRqP
+          identifier: pl_auto_variable_uQ0lTPuRqP
+          template:
+            templateRef: account.pl_auto_template_yWyY2nPcvl
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: ApprovalName
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
