@@ -7,7 +7,7 @@ template:
     type: HarnessApproval
     timeout: 1d
     spec:
-      approvalMessage: Please review the following information and approve the pipeline progression 123
+      approvalMessage: Please review the following information anfdccxcvd approve the pipeline progression 123
       includePipelineExecutionHistory: true
       approvers:
         userGroups:
