@@ -1,0 +1,20 @@
+template:
+  name: Step7
+  identifier: Step7
+  versionLabel: v2
+  type: Step
+  tags: {}
+  spec:
+    timeout: <+input>
+    type: Command
+    spec:
+      onDelegate: false
+      environmentVariables: []
+      outputVariables: []
+      commandUnits:
+        - identifier: A1
+          name: A1
+          type: Copy
+          spec:
+            sourceType: Artifact
+            destinationPath: <+input>
