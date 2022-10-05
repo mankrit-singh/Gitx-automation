@@ -1,0 +1,23 @@
+pipeline:
+  name: pl_auto_pipeline_0kl01
+  identifier: pl_auto_pipeline_0kl01
+  template:
+    templateRef: account.pl_auto_template_68HmI
+    versionLabel: v1
+    templateInputs:
+      stages:
+        - stage:
+            identifier: q1
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: a1
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+  tags: { }
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
