@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: overpl_auto_inputset_5XwpAtkHDE0
+  identifier: overpl_auto_inputset_5XwpAtkHDE0
+  orgIdentifier: default
+  projectIdentifier: Github_Connector_pipeline
+  pipelineIdentifier: pl_auto_pipeline_Xd0Rn
+  inputSetReferences:
+    - pl_auto_inputset_5XwpAtkHDE0
+  tags: {}
