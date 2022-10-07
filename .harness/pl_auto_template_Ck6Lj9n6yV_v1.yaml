@@ -8,7 +8,7 @@ template:
     type: HarnessApproval
     timeout: 1d
     spec:
-      approvalMessage: Please review the following information and approve the pipeline progression
+      approvalMessage: pl_auto_variable_GUUoItZtWp
       includePipelineExecutionHistory: true
       approvers:
         userGroups: <+input>
