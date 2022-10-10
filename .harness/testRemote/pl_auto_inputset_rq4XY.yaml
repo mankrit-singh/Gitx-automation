@@ -1,0 +1,22 @@
+inputSet:
+  identifier: "pl_auto_inputset_5DGmh73BQsQ"
+  name: "pl_auto_inputset_5DGmh73BQsQ"
+  tags: {}
+  orgIdentifier: "default"
+  projectIdentifier: "Github_Connector_pipeline"
+  pipeline:
+    identifier: "pl_auto_pipeline_AHWUJ"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.testX"
