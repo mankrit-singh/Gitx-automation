@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: A1
         identifier: A1
-        description: new pipeline Gitx
+        description: new pipeline Gitx update
         type: Approval
         spec:
           execution:
