@@ -1,0 +1,27 @@
+pipeline:
+  name: pl_auto_pipeline_PDMbZ
+  identifier: pl_auto_pipeline_PDMbZ
+  projectIdentifier: ba
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: Desc Added
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: t1
+                  identifier: t1
+                  template:
+                    templateRef: pl_auto_template_xFkSQ
+                    versionLabel: v1
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+        tags: {}
