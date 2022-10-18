@@ -1,0 +1,22 @@
+template:
+  name: pl_auto_template_UTHpQ
+  identifier: pl_auto_template_UTHpQ
+  versionLabel: v3
+  type: Stage
+  tags: { }
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: step1
+              identifier: step1
+              template:
+                templateRef: account.pl_auto_template_3PdTQ
+                versionLabel: v3
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
