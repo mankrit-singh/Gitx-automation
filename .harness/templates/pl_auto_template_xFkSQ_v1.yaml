@@ -1,0 +1,19 @@
+template:
+  name: pl_auto_template_xFkSQ
+  identifier: pl_auto_template_xFkSQ
+  versionLabel: v1
+  type: Step
+  projectIdentifier: ba
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: HarnessApproval
+    timeout: 1d
+    spec:
+      approvalMessage: Please review the following information and approve the pipeline progression 
+      includePipelineExecutionHistory: true
+      approvers:
+        userGroups: <+input>
+        minimumCount: 1
+        disallowPipelineExecutor: false
+      approverInputs: []
