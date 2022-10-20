@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "q12"
+  name: "q12"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "QWERT"
+    stages:
+    - stage:
+        identifier: "q1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "e4"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.PLQE"
