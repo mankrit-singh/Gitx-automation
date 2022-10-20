@@ -1,6 +1,7 @@
 inputSet:
   identifier: "q12"
-  name: "q12"
+  name: "q123"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "imranTest"
   pipeline:
