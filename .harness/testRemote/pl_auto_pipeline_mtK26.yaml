@@ -1,0 +1,30 @@
+pipeline:
+  name: pl_auto_pipeline_mtK26
+  identifier: pl_auto_pipeline_mtK26
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
+  tags: {}
+  stages:
+    - stage:
+        name: A1
+        identifier: A1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: A2
+                  identifier: A2
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo amit
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
