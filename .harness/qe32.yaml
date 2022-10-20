@@ -1,0 +1,9 @@
+overlayInputSet:
+  name: qe32
+  identifier: qe32
+  orgIdentifier: default
+  projectIdentifier: imranTest
+  pipelineIdentifier: QWERT
+  inputSetReferences:
+    - q12
+  tags: {}
