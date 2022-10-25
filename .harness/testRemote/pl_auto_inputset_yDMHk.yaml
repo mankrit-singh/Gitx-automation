@@ -1,6 +1,6 @@
 inputSet:
   identifier: "pl_auto_inputset_unfep"
-  name: "pl_auto_inputset_unfep"
+  name: "pl_auto_inputset_wnNoF"
   tags: {}
   orgIdentifier: "default"
   projectIdentifier: "Github_Connector_pipeline"
