@@ -1,0 +1,22 @@
+inputSet:
+  identifier: "pl_auto_inputset_5EpYO4edr1q"
+  name: "pl_auto_inputset_5EpYO4edr1q"
+  tags: {}
+  orgIdentifier: "Simlified_Git_sync"
+  projectIdentifier: "SimplifiedGitSync_Do_Not_Delete"
+  pipeline:
+    identifier: "pl_auto_pipeline_loboK"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.testX"
