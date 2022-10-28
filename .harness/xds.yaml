@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "xds"
+  name: "xds"
+  orgIdentifier: "default"
+  projectIdentifier: "DemoImran"
+  pipeline:
+    identifier: "pipe28"
+    stages:
+    - stage:
+        identifier: "as"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "dsa"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.Account_Administrator"
