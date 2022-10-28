@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: as
         identifier: as
-        description: ""
+        description: "nh"
         type: Approval
         spec:
           execution:
