@@ -4,7 +4,7 @@ template:
   versionLabel: v3
   type: Step
   projectIdentifier: SimplifiedGitSync_Do_Not_Delete
-  orgIdentifier: Simlified_Git_sync
+  orgIdentifier: default
   tags: {}
   spec:
     type: HarnessApproval
