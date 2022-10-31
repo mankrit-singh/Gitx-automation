@@ -1,0 +1,22 @@
+inputSet:
+  identifier: "pl_auto_inputset_bk0BT"
+  name: "pl_auto_inputset_bk0BT"
+  tags: {}
+  orgIdentifier: "Simlified_Git_sync"
+  projectIdentifier: "SimplifiedGitSync_Do_Not_Delete"
+  pipeline:
+    identifier: "pl_auto_pipeline_ytm7h"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.testX"
