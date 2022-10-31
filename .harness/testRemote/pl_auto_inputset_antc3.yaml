@@ -1,0 +1,22 @@
+inputSet:
+  identifier: "pl_auto_inputset_JNHIb"
+  name: "pl_auto_inputset_JNHIb"
+  tags: {}
+  orgIdentifier: "Simlified_Git_sync"
+  projectIdentifier: "SimplifiedGitSync_Do_Not_Delete"
+  pipeline:
+    identifier: "pl_auto_pipeline_1MTGL"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.testX"
