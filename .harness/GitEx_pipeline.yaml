@@ -14,7 +14,7 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: Approval
+                  name: Approval1
                   identifier: Approval
                   type: HarnessApproval
                   timeout: 1d
