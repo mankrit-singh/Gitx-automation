@@ -1,0 +1,30 @@
+pipeline:
+  name: GitExPipelinerijesh
+  identifier: GitExPipelinerijesh
+  projectIdentifier: bugbash
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: cs
+        identifier: cs
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ss
+                  identifier: ss
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: exit 0
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
