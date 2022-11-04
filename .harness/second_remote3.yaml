@@ -1,0 +1,41 @@
+pipeline:
+  name: second_remote
+  identifier: second_remote3
+  projectIdentifier: bugbash
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: githubauto
+        build: <+input>
+  stages:
+    - stage:
+        name: hi
+        identifier: hi
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          infrastructure:
+            type: KubernetesDirect
+            spec:
+              connectorRef: <+input>
+              namespace: <+input>
+              automountServiceAccountToken: true
+              nodeSelector: {}
+              os: <+input>
+          execution:
+            steps:
+              - step:
+                  type: GitClone
+                  name: hi
+                  identifier: hi
+                  spec:
+                    connectorRef: <+input>
+                    repoName: <+input>
+                    cloneDirectory: <+input>
+                    build:
+                      type: branch
+                      spec:
+                        branch: <+input>
