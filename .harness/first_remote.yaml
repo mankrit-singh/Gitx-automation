@@ -1,0 +1,31 @@
+pipeline:
+  name: first_remote
+  identifier: first_remote
+  projectIdentifier: bugbash
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: temp
+        identifier: temp
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: temp
+                  identifier: temp
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
