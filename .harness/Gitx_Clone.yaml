@@ -1,0 +1,31 @@
+---
+pipeline:
+  projectIdentifier: "bugbash"
+  orgIdentifier: "default"
+  tags: {}
+  stages:
+  - stage:
+      name: "Q1"
+      identifier: "Q1"
+      description: ""
+      type: "Approval"
+      spec:
+        execution:
+          steps:
+          - step:
+              name: "W2"
+              identifier: "W2"
+              type: "HarnessApproval"
+              timeout: "1d"
+              spec:
+                approvalMessage: "Please review the following information\nand approve\
+                  \ the pipeline progression"
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups: "<+input>"
+                approverInputs: []
+      tags: {}
+  identifier: "Gitx_Clone"
+  name: "Gitx - Clone"
