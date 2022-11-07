@@ -13,7 +13,7 @@ template:
               name: step1
               identifier: step1
               template:
-                templateRef: account.pl_auto_template_U3vr5
+                templateRef: account.pl_auto_template_PHLx1
                 versionLabel: v3
                 templateInputs:
                   type: HarnessApproval
