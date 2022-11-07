@@ -1,5 +1,4 @@
-pipeline:
-  name: remote
+name: remote
   identifier: remote
   projectIdentifier: pipelinetriage
   orgIdentifier: default
